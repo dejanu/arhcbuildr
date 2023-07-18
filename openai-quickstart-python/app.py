@@ -7,6 +7,7 @@ app = Flask(__name__)
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
+
 @app.route("/", methods=("GET", "POST"))
 def index():
     if request.method == "POST":
@@ -33,3 +34,8 @@ Animal: {}
 Names:""".format(
         animal.capitalize()
     )
+
+@app.route("/models", methods=["GET"])
+def models():
+    """ return a list of models """
+    return render_template("models.html", models=openai.Model.list())

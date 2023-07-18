@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <title>OpenAI models</title>
+</head>
+
+<body>
+    <h1>OpenAI models</h1>
+    <ul>
+        {% for model in models %}
+        <li><a href="/models/{{ model }}">{{ model }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
