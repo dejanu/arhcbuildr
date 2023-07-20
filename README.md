@@ -9,3 +9,7 @@ Repo for arhcbuildr app
 ## Models:
 
 https://medium.datadriveninvestor.com/list-of-open-source-large-language-models-llms-4eac551bda2e
+
+# OpenAI
+
+* [status_page](https://status.openai.com/)
