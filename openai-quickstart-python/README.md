@@ -33,7 +33,10 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
    $ cp .env.example .env
    ```
 
-7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file.
+7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file or export it as env var:
+```bash
+export OPENAI_API_KEY=....
+```
 
 8. Run the app:
 
